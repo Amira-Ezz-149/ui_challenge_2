@@ -13,36 +13,33 @@ class MobileScreen extends StatelessWidget {
           width: double.infinity,
           child: ListView(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(
-                  bottom: 20.0,
-                ),
-                child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
+              // new update instead of 3 paddings
+              Center(
+                child: Column(
+                  children: [
+                    Text(
                       'CAT Reloaded',
                       style: kCATReloadedStyle,
-                    )),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 20.0),
-                child: Align(
-                    alignment: Alignment.center,
-                    child: Text('UI Challenge 2 for Flutter Circle',
-                        style: kUIChallengeStyle)),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 20.0),
-                child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text('UI Challenge 2 for Flutter Circle',
+                        style: kUIChallengeStyle),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
                       'Social Media UI Colors',
                       style: kSocialMediaUIStyle,
-                    )),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                  ],
+                ),
               ),
-              SizedBox(
-                height: 20,
-              ),
+
               Container(
                   width: double.infinity,
                   child: Wrap(
@@ -52,56 +49,51 @@ class MobileScreen extends StatelessWidget {
                     children: [
                       UnitOfColor(
                         socialMediaLabel: 'Snap Chat',
-                        colorUnit: Colors.yellow,
-                        // mobileWidth: double.infinity
+                        colorUnit: Color(0xffF7F400),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'Product Hunt',
-                        colorUnit: Colors.deepOrange,
-                        // mobileWidth: double.infinity
+                        colorUnit: Color(0xffD3522E),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'LinkedIn',
-                        colorUnit: Colors.blue,
+                        colorUnit: Color(0xff0E72A3),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'Quora',
-                        colorUnit: Colors.redAccent,
+                        colorUnit: Color(0xffA32200),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'Twitter',
-                        colorUnit: Colors.cyan,
+                        colorUnit: Color(0xff00A9F5),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'Reddit',
-                        colorUnit: Colors.orange,
+                        colorUnit: Color(0xffF74300),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'FaceBook',
-                        colorUnit: Colors.blueAccent,
+                        colorUnit: Color(0xff3A5794),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'Yahoo!',
-                        colorUnit: Colors.deepPurple,
+                        colorUnit: Color(0xff3F008E),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'YouTube',
-                        colorUnit: Colors.red,
-                        // mobileWidth: double.infinity
+                        colorUnit: Color(0xffF70000),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'WhatsApp',
-                        colorUnit: Colors.green,
-                        // mobileWidth: double.infinity
+                        colorUnit: Color(0xff3AD750),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'Behance',
-                        colorUnit: Colors.black,
-                        // mobileWidth: double.infinity
+                        colorUnit: Color(0xff000000),
                       ),
                       UnitOfColor(
                         socialMediaLabel: 'Medium',
-                        colorUnit: Colors.greenAccent,
+                        colorUnit: Color(0xff70CCD5),
                       ),
                     ],
                   )),

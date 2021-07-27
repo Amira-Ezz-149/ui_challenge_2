@@ -12,36 +12,35 @@ class DesktopScreen extends StatelessWidget {
         padding: const EdgeInsets.only(left: 50.0, right: 50.0, top: 100),
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(
-                bottom: 20.0,
-              ),
-              child: Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
+
+            Align(
+              alignment: Alignment.topLeft,
+
+              // new update instead of 3 paddings
+              child: Column(
+                children: [
+                  Text(
                     'CAT Reloaded',
                     style: kCATReloadedStyle,
-                  )),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 20.0),
-              child: Align(
-                  alignment: Alignment.topLeft,
-                  child: Text('UI Challenge 2 for Flutter Circle',
-                      style: kUIChallengeStyle)),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 20.0),
-              child: Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
+                  ),
+                  SizedBox(height: 20,),
+                  Text('UI Challenge 2 for Flutter Circle',
+                      style: kUIChallengeStyle),
+                  SizedBox(height: 20,),
+                  Text(
                     'Social Media UI Colors',
                     style: kSocialMediaUIStyle,
-                  )),
+                  ),
+                  SizedBox(height: 20,),
+                ],
+              ),
             ),
+
+           //************************************  first row
+            //**************************************************************
             Expanded(
               child: Container(
-                height: double.infinity,
+
                 child: Row(
                   children: [
                     Expanded(
@@ -55,8 +54,8 @@ class DesktopScreen extends StatelessWidget {
                     ),
                     Expanded(
                       child: UnitOfColor(
-                        socialMediaLabel: 'Product Hunt',
-                        colorUnit: Colors.deepOrange,
+                        socialMediaLabel: 'product Hunt',
+                        colorUnit: Color(0xffD3522E),
                       ),
                     ),
                     SizedBox(
@@ -83,7 +82,7 @@ class DesktopScreen extends StatelessWidget {
                     Expanded(
                       child: UnitOfColor(
                         socialMediaLabel: 'Twitter',
-                        colorUnit: Colors.cyan,
+                        colorUnit: Color(0xff00A9F5),
                       ),
                     ),
                     SizedBox(
@@ -102,6 +101,9 @@ class DesktopScreen extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
+
+            //**********************************  second row
+            //*******************************************************
             Expanded(
               child: Container(
                 height: double.infinity,
@@ -146,7 +148,7 @@ class DesktopScreen extends StatelessWidget {
                     Expanded(
                       child: UnitOfColor(
                         socialMediaLabel: 'Behance',
-                        colorUnit: Colors.black,
+                        colorUnit: Color(0xff000000),
                       ),
                     ),
                     SizedBox(
@@ -155,7 +157,7 @@ class DesktopScreen extends StatelessWidget {
                     Expanded(
                       child: UnitOfColor(
                         socialMediaLabel: 'Medium',
-                        colorUnit: Colors.greenAccent,
+                        colorUnit: Color(0xff70CCD5),
                       ),
                     ),
                   ],

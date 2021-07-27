@@ -1,6 +1,8 @@
 //me
 
 import 'package:flutter/material.dart';
+import 'constants.dart';
+
 
 class UnitOfColor extends StatefulWidget {
   UnitOfColor({
@@ -36,7 +38,7 @@ class _UnitOfColorState extends State<UnitOfColor> {
       child: Container(
         width: containerWidth,
         height: 150,
-        padding: EdgeInsets.symmetric(vertical: 10.0),
+        padding: EdgeInsets.symmetric(vertical: 10.0, ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
           border: Border.all(color: Colors.grey, width: 2),
@@ -58,19 +60,12 @@ class _UnitOfColorState extends State<UnitOfColor> {
                 height: 10,
               ),
               Container(
+                //margin: EdgeInsets.symmetric(horizontal: 5.0),
+                padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 3.0),
                 color: Colors.blueGrey,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 15.0, vertical: 3.0),
-                  child: Expanded(
-                    child: Text(
-                      'copy',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w700,
-                          letterSpacing: 1),
-                    ),
-                  ),
+                child: Text(
+                  'copy',
+                  style:kCopyTextStyle,
                 ),
               ),
             ],

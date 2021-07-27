@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
       ),
       home: LayoutBuilder(
         builder: (context, constraints) {
-          print(constraints.minWidth.toInt());
-          if (constraints.minWidth.toInt() <= 800) return MobileScreen();
+         // print(constraints.minWidth.toInt());
+          if (constraints.minWidth.toInt() <= 814) return MobileScreen();
 
           return DesktopScreen();
         },
