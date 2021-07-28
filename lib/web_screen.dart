@@ -1,10 +1,9 @@
-//me
 
 import 'package:flutter/material.dart';
 import 'unit_of_color.dart';
 import 'constants.dart';
 
-class DesktopScreen extends StatelessWidget {
+class WebScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +11,6 @@ class DesktopScreen extends StatelessWidget {
         padding: const EdgeInsets.only(left: 50.0, right: 50.0, top: 100),
         child: Column(
           children: [
-
             Align(
               alignment: Alignment.topLeft,
 
