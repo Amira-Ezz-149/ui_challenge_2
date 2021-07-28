@@ -1,4 +1,7 @@
 # ui_challenge_2_ Flutter Circle-CAT
-color social media responsive ui
 
+no packages
+
+color social media responsive ui
+mobile mode, web mode responsive ui
 
